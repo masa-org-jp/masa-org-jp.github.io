@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.masa.deeplinkexperiment",
+      "sha256_cert_fingerprints": [
+        "81:A9:E7:A4:69:46:C9:14:74:E7:91:CA:62:53:D9:74:0C:74:20:A2:1F:16:F7:DF:F3:E4:3E:51:5E:7E:AE:26"
+      ]
+    },
+    "relation_extensions": {
+      "delegate_permission/common.handle_all_urls": {
+        "dynamic_app_link_components": [
+          { "/": "/itemlist" },
+          { "/": "/itemdetail/*", "?": {"android_app": "true"} },
+          { "/": "*", "exclude": true }
+        ]
+      }
+    }
+  }
+]
