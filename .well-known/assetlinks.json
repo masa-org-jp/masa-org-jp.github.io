@@ -12,7 +12,7 @@
       "delegate_permission/common.handle_all_urls": {
         "dynamic_app_link_components": [
           { "/": "/itemlist" },
-          { "/": "/itemdetail/*", "?": {"android_app": "true"} },
+          { "/": "/itemdetail/*", "?": {"android_app_test": "true"} },
           { "/": "*", "exclude": true }
         ]
       }
